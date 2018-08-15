@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>个人网站</title>
+    <script src="./js/vue-2.4.0.js"></script>
+    <script src="./js/vue-router-3.0.1.js"></script>
 </head>
 <body>
-    <h1>superman</h1>
+   <div id="app">
+        输入一段文字: <input type="text" v-model="msg">
+        <p>{{msg}}</p>
+   </div>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                msg: ''
+            }
+        })
+    </script>
 </body>
 </html>
